@@ -1,0 +1,286 @@
+INSERT INTO nivel (id_nivel, nombre_nivel, descripcion_nivel) VALUES
+(1, 'Preescolar', 'Nivel inicial de la educación básica que comprende los grados prejardín, jardín y transición.'),
+(2, 'Básica Primaria', 'Nivel de educación básica que comprende los grados primero a quinto.'),
+(3, 'Básica Secundaria', 'Nivel de educación básica que comprende los grados sexto a noveno.'),
+(4, 'Media Vocacional', 'Nivel de educación media que comprende los grados décimo y undécimo.');
+
+INSERT INTO grado (id_grado, id_nivel, nombre_grado, descripcion_grado) VALUES
+(101, 1, 'Prejardín', 'Primer grado del nivel preescolar.'),
+(102, 1, 'Jardín', 'Segundo grado del nivel preescolar.'),
+(103, 1, 'Transición', 'Grado de transición previo a la educación básica primaria.');
+
+INSERT INTO grado (id_grado, id_nivel, nombre_grado, descripcion_grado) VALUES
+(201, 2, 'Primero', 'Primer grado de la educación básica primaria.'),
+(202, 2, 'Segundo', 'Segundo grado de la educación básica primaria.'),
+(203, 2, 'Tercero', 'Tercer grado de la educación básica primaria.'),
+(204, 2, 'Cuarto', 'Cuarto grado de la educación básica primaria.'),
+(205, 2, 'Quinto', 'Quinto grado de la educación básica primaria.');
+
+INSERT INTO grado (id_grado, id_nivel, nombre_grado, descripcion_grado) VALUES
+(306, 3, 'Sexto', 'Primer grado de la educación básica secundaria.'),
+(307, 3, 'Séptimo', 'Segundo grado de la educación básica secundaria.'),
+(308, 3, 'Octavo', 'Tercer grado de la educación básica secundaria.'),
+(309, 3, 'Noveno', 'Cuarto grado de la educación básica secundaria.');
+
+INSERT INTO grado (id_grado, id_nivel, nombre_grado, descripcion_grado) VALUES
+(410, 4, 'Décimo', 'Primer grado de la educación media vocacional.'),
+(411, 4, 'Undécimo', 'Segundo grado de la educación media vocacional.');
+
+
+
+INSERT INTO area (id_area, id_grado, nombre_area, descripcion_area) VALUES
+(10101, 101, 'Matemáticas', 'Desarrollo del pensamiento lógico-matemático en prejardín.'),
+(10102, 101, 'Lenguaje', 'Estimulación del lenguaje oral en prejardín.'),
+
+(10201, 102, 'Matemáticas', 'Nociones básicas de cantidad y forma en jardín.'),
+(10202, 102, 'Lenguaje', 'Fortalecimiento del lenguaje oral en jardín.'),
+
+(10301, 103, 'Matemáticas', 'Pensamiento lógico y nociones numéricas en transición.'),
+(10302, 103, 'Lenguaje', 'Inicio del proceso lector y escritor en transición.');
+
+INSERT INTO area (id_area, id_grado, nombre_area, descripcion_area) VALUES
+(20101, 201, 'Matemáticas', 'Operaciones básicas y pensamiento numérico en primero.'),
+(20102, 201, 'Lenguaje', 'Lectura y escritura inicial en primero.'),
+
+(20201, 202, 'Matemáticas', 'Suma y resta con números naturales en segundo.'),
+(20202, 202, 'Lenguaje', 'Comprensión lectora y producción escrita en segundo.'),
+
+(20301, 203, 'Matemáticas', 'Multiplicación y división en tercero.'),
+(20302, 203, 'Lenguaje', 'Lectura comprensiva y escritura estructurada en tercero.'),
+
+(20401, 204, 'Matemáticas', 'Resolución de problemas matemáticos en cuarto.'),
+(20402, 204, 'Lenguaje', 'Análisis de textos narrativos en cuarto.'),
+
+(20501, 205, 'Matemáticas', 'Pensamiento lógico y aritmético en quinto.'),
+(20502, 205, 'Lenguaje', 'Producción textual y comprensión lectora en quinto.');
+
+INSERT INTO area (id_area, id_grado, nombre_area, descripcion_area) VALUES
+(30601, 306, 'Matemáticas', 'Introducción al álgebra y geometría en sexto.'),
+(30602, 306, 'Lenguaje', 'Comprensión y producción textual en sexto.'),
+
+(30701, 307, 'Matemáticas', 'Operaciones algebraicas básicas en séptimo.'),
+(30702, 307, 'Lenguaje', 'Análisis de textos narrativos y argumentativos en séptimo.'),
+
+(30801, 308, 'Matemáticas', 'Álgebra y geometría plana en octavo.'),
+(30802, 308, 'Lenguaje', 'Lectura crítica y escritura argumentativa en octavo.'),
+
+(30901, 309, 'Matemáticas', 'Funciones y expresiones algebraicas en noveno.'),
+(30902, 309, 'Lenguaje', 'Análisis literario y producción textual en noveno.');
+
+INSERT INTO area (id_area, id_grado, nombre_area, descripcion_area) VALUES
+(41001, 410, 'Matemáticas', 'Funciones y pensamiento matemático en décimo.'),
+(41002, 410, 'Lenguaje', 'Competencias comunicativas y argumentativas en décimo.'),
+
+(41101, 411, 'Matemáticas', 'Matemáticas aplicadas y preparación para educación superior.'),
+(41102, 411, 'Lenguaje', 'Lectura crítica y producción de textos académicos.');
+
+-- =========================
+-- BÁSICA PRIMARIA (1° a 5°)
+-- =========================
+
+-- Grado 1 (201)
+INSERT INTO asignatura VALUES
+(2010101, 20101, 'Matemáticas I', 'Fundamentos básicos de números y operaciones.', 5),
+(2010102, 20101, 'Matemáticas Aplicadas I', 'Aplicación de matemáticas en situaciones cotidianas.', 3),
+(2010201, 20102, 'Lenguaje I', 'Desarrollo de lectura y escritura inicial.', 5),
+(2010202, 20102, 'Lenguaje Aplicado I', 'Comprensión lectora y expresión oral.', 3);
+
+-- Grado 2 (202)
+INSERT INTO asignatura VALUES
+(2020101, 20201, 'Matemáticas II', 'Operaciones básicas y resolución de problemas.', 5),
+(2020102, 20201, 'Matemáticas Aplicadas II', 'Uso práctico de operaciones matemáticas.', 3),
+(2020201, 20202, 'Lenguaje II', 'Lectura comprensiva y producción textual.', 5),
+(2020202, 20202, 'Lenguaje Aplicado II', 'Narración y comprensión de textos.', 3);
+
+-- Grado 3 (203)
+INSERT INTO asignatura VALUES
+(2030101, 20301, 'Matemáticas III', 'Multiplicación, división y razonamiento lógico.', 5),
+(2030102, 20301, 'Matemáticas Aplicadas III', 'Resolución de problemas matemáticos.', 3),
+(2030201, 20302, 'Lenguaje III', 'Producción de textos y ortografía.', 5),
+(2030202, 20302, 'Lenguaje Aplicado III', 'Análisis básico de textos.', 3);
+
+-- Grado 4 (204)
+INSERT INTO asignatura VALUES
+(2040101, 20401, 'Matemáticas IV', 'Fracciones y geometría básica.', 5),
+(2040102, 20401, 'Matemáticas Aplicadas IV', 'Aplicación de fracciones y medidas.', 3),
+(2040201, 20402, 'Lenguaje IV', 'Comprensión crítica de textos.', 5),
+(2040202, 20402, 'Lenguaje Aplicado IV', 'Producción textual avanzada.', 3);
+
+-- Grado 5 (205)
+INSERT INTO asignatura VALUES
+(2050101, 20501, 'Matemáticas V', 'Decimales y resolución de problemas complejos.', 5),
+(2050102, 20501, 'Matemáticas Aplicadas V', 'Uso matemático en contextos reales.', 3),
+(2050201, 20502, 'Lenguaje V', 'Análisis y producción de textos.', 5),
+(2050202, 20502, 'Lenguaje Aplicado V', 'Argumentación escrita y oral.', 3);
+
+-- =========================
+-- BÁSICA SECUNDARIA (6° a 9°)
+-- =========================
+
+-- Grado 6 (306)
+INSERT INTO asignatura VALUES
+(3060101, 30601, 'Matemáticas VI', 'Aritmética y pensamiento algebraico.', 5),
+(3060102, 30601, 'Matemáticas Aplicadas VI', 'Resolución de problemas algebraicos.', 3),
+(3060201, 30602, 'Lenguaje VI', 'Comprensión e interpretación textual.', 5),
+(3060202, 30602, 'Lenguaje Aplicado VI', 'Producción de textos narrativos.', 3);
+
+-- Grado 7 (307)
+INSERT INTO asignatura VALUES
+(3070101, 30701, 'Matemáticas VII', 'Introducción al álgebra.', 5),
+(3070102, 30701, 'Matemáticas Aplicadas VII', 'Modelación matemática básica.', 3),
+(3070201, 30702, 'Lenguaje VII', 'Literatura y análisis textual.', 5),
+(3070202, 30702, 'Lenguaje Aplicado VII', 'Ensayos cortos y argumentación.', 3);
+
+-- Grado 8 (308)
+INSERT INTO asignatura VALUES
+(3080101, 30801, 'Matemáticas VIII', 'Ecuaciones y geometría.', 5),
+(3080102, 30801, 'Matemáticas Aplicadas VIII', 'Resolución de problemas geométricos.', 3),
+(3080201, 30802, 'Lenguaje VIII', 'Análisis literario.', 5),
+(3080202, 30802, 'Lenguaje Aplicado VIII', 'Producción de textos argumentativos.', 3);
+
+-- Grado 9 (309)
+INSERT INTO asignatura VALUES
+(3090101, 30901, 'Matemáticas IX', 'Funciones y razonamiento matemático.', 5),
+(3090102, 30901, 'Matemáticas Aplicadas IX', 'Aplicación de funciones.', 3),
+(3090201, 30902, 'Lenguaje IX', 'Análisis crítico de textos.', 5),
+(3090202, 30902, 'Lenguaje Aplicado IX', 'Ensayo argumentativo.', 3);
+
+-- =========================
+-- MEDIA VOCACIONAL (10° y 11°)
+-- =========================
+
+-- Grado 10 (410)
+INSERT INTO asignatura VALUES
+(4100101, 41001, 'Matemáticas X', 'Trigonometría y estadística.', 5),
+(4100102, 41001, 'Matemáticas Aplicadas X', 'Estadística aplicada.', 3),
+(4100201, 41002, 'Lenguaje X', 'Literatura universal.', 5),
+(4100202, 41002, 'Lenguaje Aplicado X', 'Producción textual avanzada.', 3);
+
+-- Grado 11 (411)
+INSERT INTO asignatura VALUES
+(4110101, 41101, 'Matemáticas XI', 'Cálculo básico y análisis matemático.', 5),
+(4110102, 41101, 'Matemáticas Aplicadas XI', 'Resolución de problemas reales.', 3),
+(4110201, 41102, 'Lenguaje XI', 'Literatura colombiana.', 5),
+(4110202, 41102, 'Lenguaje Aplicado XI', 'Ensayo crítico.', 3);
+
+
+INSERT INTO modulo (id_modulo, nombre_corto_modulo, nombre_modulo, descripcion_modulo) VALUES
+(1, 'ADMIN', 'Administración', 'Módulo de administración general del sistema académico'),
+(2, 'EVAL', 'Evaluación', 'Módulo de evaluación académica y generación de boletines');
+
+
+INSERT INTO funcionalidad 
+(nombre_corto_funcionalidad, nombre_funcionalidad, descripcion_funcionalidad, id_modulo, ruta) VALUES
+('USR_GEST', 'Gestión de usuarios', 
+ 'Permite la creación, edición, activación y desactivación de usuarios del sistema', 
+ 1, '/admin/usuarios'),
+
+('ROL_GEST', 'Gestión de roles', 
+ 'Permite administrar los roles del sistema y su asignación a usuarios', 
+ 1, '/admin/roles'),
+
+('MOD_FUN_GEST', 'Gestión de módulos y funcionalidades', 
+ 'Permite administrar los módulos del sistema y sus funcionalidades asociadas', 
+ 1, '/admin/modulos'),
+
+('PLAN_EST', 'Gestión de plan de estudio', 
+ 'Permite administrar niveles, grados, áreas, asignaturas y desempeños', 
+ 1, '/admin/plan-estudio'),
+
+('PLAN_ANIO', 'Planificación de año escolar', 
+ 'Permite configurar el año escolar, periodos académicos y calendarios', 
+ 1, '/admin/anio-escolar'),
+
+('GRUPO_GEST', 'Gestión de grupos', 
+ 'Permite crear y administrar grupos académicos por grado y año escolar', 
+ 1, '/admin/grupos'),
+
+('MATRICULA', 'Matrícula', 
+ 'Permite realizar la matrícula de estudiantes en grupos académicos', 
+ 1, '/admin/matricula');
+
+INSERT INTO funcionalidad 
+(nombre_corto_funcionalidad, nombre_funcionalidad, descripcion_funcionalidad, id_modulo, ruta) VALUES
+('DESP_PER', 'Gestión de desempeños por periodo', 
+ 'Permite gestionar los desempeños evaluables por asignatura y periodo académico', 
+ 2, '/evaluacion/desempenios'),
+
+('NOTA_PER', 'Registro de notas por periodo', 
+ 'Permite registrar y consultar las notas de los estudiantes por periodo', 
+ 2, '/evaluacion/notas'),
+
+('COND_PER', 'Registro de conducta por periodo', 
+ 'Permite registrar la evaluación de la conducta por periodo académico', 
+ 2, '/evaluacion/conducta'),
+
+('BOLETIN', 'Generación de boletín por periodo', 
+ 'Permite generar y consultar boletines académicos por periodo', 
+ 2, '/evaluacion/boletines');
+
+SELECT * FROM persona;
+-- 1. Insertar Personas
+INSERT INTO persona (id_persona, numero_documento_identidad, nombres, apellidos, fecha_nacimiento, email, tipo_documento_identidad) VALUES 
+(10, '2001', 'Carlos', 'Maestro', '1985-05-20', 'carlos@mail.com', 'CC'),
+(11, '2002', 'Ana', 'Profesora', '1990-08-15', 'ana@mail.com', 'CC');
+
+-- 2. Convertirlas en Docentes
+INSERT INTO docente (id_persona, ultimo_titulo_profesional, actual_cargo) VALUES 
+(10, 'Lic. en Matemáticas', 'Docente Planta'),
+(11, 'Lic. en Lenguas', 'Docente Planta');
+
+
+
+INSERT INTO grupo_asignatura (id_grupo, id_asignatura, id_docente) VALUES
+(1, 2010101, 10), -- Matemáticas I asignada a Carlos Maestro
+(1, 2010102, 10), -- Matemáticas Aplicadas I asignada a Carlos Maestro
+(1, 2010201, 11), -- Lenguaje I asignada a Ana Profesora
+(1, 2010202, 11); -- Lenguaje Aplicado I asignada a Ana Profesora
+
+-- Grupos registrados
+SELECT * FROM grupo;
+-- Grupos registrados
+SELECT * FROM grupo_asignatura;
+-- Docentes registrados
+SELECT * FROM grupo where id_anio_escolar  = 1;
+-- Grados registrados
+SELECT * FROM grado;
+-- Docentes registrados
+SELECT * FROM docente;
+
+-- Años registrados
+SELECT * FROM anio_escolar;
+-- Año Actual
+SELECT * FROM anio_escolar WHERE es_anio_actual = 1;
+-- Ver periodos de año especifico
+SELECT 
+    id_periodo,
+    orden_periodo AS 'Periodo N°',
+    fecha_inicio,
+    fecha_fin
+FROM periodo 
+WHERE id_anio_escolar = 3;
+-- Ver profesores vinculados a un año
+SELECT 
+    p.nombres,
+    p.apellidos,
+    v.fecha_vinculacion
+FROM vinculacion_docente v
+JOIN persona p ON v.id_persona = p.id_persona
+WHERE v.id_anio_escolar = 1;
+-- Ver grupos vinculados a un año
+SELECT 
+    gr.nombre_grado,
+    g.nombre_grupo AS 'Grupo'
+FROM grupo g
+JOIN grado gr ON g.id_grado = gr.id_grado
+WHERE g.id_anio_escolar = 1
+ORDER BY gr.id_grado;
+-- Ver historico de años (Docentes, Grupos, periodos)
+SELECT 
+    CONCAT('Año ', YEAR(ae.fecha_inicio)) AS anio,
+    (SELECT COUNT(*) FROM vinculacion_docente WHERE id_anio_escolar = ae.id_anio_escolar) AS 'Docentes Vinculados',
+    (SELECT COUNT(*) FROM grupo WHERE id_anio_escolar = ae.id_anio_escolar) AS 'Grupos Creados',
+    (SELECT COUNT(*) FROM periodo WHERE id_anio_escolar = ae.id_anio_escolar) AS 'N° Periodos'
+FROM anio_escolar ae;
+
+

@@ -1,0 +1,22 @@
+# Framework principal
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+
+# Base de Datos y ORM
+sqlalchemy==2.0.35
+# Driver para MySQL (ajustar si usas otro motor)
+mysqlclient==2.2.4 
+# Alternativa pura python si mysqlclient da problemas:
+# pymysql==1.1.1
+
+# Validación de datos
+pydantic==2.9.2
+pydantic-settings==2.5.2
+
+# Seguridad y Contraseñas (para tu tabla usuario)
+passlib[bcrypt]==1.7.4
+python-jose[cryptography]==3.3.0
+python-multipart==0.0.12
+
+# Utilidades
+cryptography==43.0.1

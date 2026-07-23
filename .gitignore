@@ -1,0 +1,32 @@
+# === ENTORNOS VIRTUALES Y PYTHON ===
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# === NODE Y REACT (FRONTEND) ===
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+.npm/
+
+# === ARCHIVOS CONFIDENCIALES Y VARIABLES ===
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# === ARCHIVOS DE CONFIGURACIÓN DEL EDITOR / SISTEMA ===
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# === BASES DE DATOS LOCALES O DUMPS ===
+*.sql
+*.sqlite3
+DB/*.sql

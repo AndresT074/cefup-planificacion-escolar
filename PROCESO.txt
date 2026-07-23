@@ -1,0 +1,23 @@
+Crear entorno virtual 
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+
+Activar entorno virtual
+.\venv\Scripts\Activate.ps1
+
+Crear Backend:
+pip install fastapi uvicorn sqlalchemy pymysql pydantic python-dotenv "pydantic[email]"
+
+Frontend	React (con Vite)
+Crear frontend
+npm create vite@latest frontend -- --template react (React, JavaScript + SWC)
+
+Instalar Bootstrap:
+npm install
+npm install axios bootstrap react-bootstrap react@18.3.1 react-dom@18.3.1 react-router-dom
+
+Ejecutar Backend:
+uvicorn app.main:app --reload
+
+Correr frontend: 
+npm run dev
